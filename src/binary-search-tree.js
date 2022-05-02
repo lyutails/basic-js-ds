@@ -50,25 +50,6 @@ class BinarySearchTree {
     }
   }
 
-
-  /*find(data) {
-    if(!this.myRoot) return false;
-
-    let current = this.myRoot;
-    let found = false;
-    while(current && !found){
-      if(data < current.data){
-        current = current.left
-      } else if(data > current.data){
-        current = current.right;
-      } else {
-        found = current;
-      }
-    }
-    if(!found) return undefined;
-    return found;
-  }*/
-
   find(data) {
     if(!this.myRoot) return false;
 
@@ -156,10 +137,6 @@ class BinarySearchTree {
     return node.data;
   }
 }
-
-
-//const tree = new BinarySearchTree();
-
 
 module.exports = {
   BinarySearchTree
