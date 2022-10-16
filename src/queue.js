@@ -63,10 +63,8 @@ class Queue {
     if (this.tail.lenth === 0) {
       this.move();
     }
-    }
-    return value;
-  } 
-}
+  }
+} 
 
 module.exports = {
   Queue
