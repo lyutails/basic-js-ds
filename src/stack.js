@@ -11,24 +11,27 @@ const { NotImplementedError } = require('../extensions/index.js');
  * stack.pop(); // returns the top element from stack and deletes it, returns 1
  * stack.pop(); // undefined
  *
- */
-class Stack {
-  push(/* element */) {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
-  }
+ */ 
 
-  pop() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
-  }
-
-  peek() {
-    throw new NotImplementedError('Not implemented');
-    // remove line with error and write your code here
-  }
-}
-
-module.exports = {
-  Stack
-};
+ class Stack {
+   constructor(){
+     this.stack = []
+   }
+ 
+   push(elements) {
+     this.stack.push(elements);
+   }
+ 
+   pop() {
+    const lastElement = this.stack.pop();
+    return lastElement;          
+   }
+ 
+   peek() {    
+    return this.stack.at(-1);
+   }
+ }
+ 
+ module.exports = {
+   Stack
+ };
